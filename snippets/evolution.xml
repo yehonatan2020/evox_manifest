@@ -80,7 +80,7 @@
 
   <!-- Frameworks -->
   <project path="frameworks/av" name="frameworks_av" groups="pdk" remote="evo" />
-  <project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="evo" />
+  <project path="frameworks/base" fetch="https://github.com" name="yehonatan2020/evo_frameworks_base" revision="udc" />
   <project path="frameworks/native" name="frameworks_native" groups="pdk" remote="evo" />
   <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" groups="pdk" remote="evo" />
 
