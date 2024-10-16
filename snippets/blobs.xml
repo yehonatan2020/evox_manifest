@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <project path="vendor/google/panther" name="yehonatan2020/lineage_vendor_google_panther" revision="evo" fetch="https://github.com" />
+  <project path="vendor/google/cheetah" name="yehonatan2020/lineage_vendor_google_cheetah" revision="evo" fetch="https://github.com" />
+  <project path="vendor/google/husky" name="yehonatan2020/lineage_vendor_google_husky" revision="evo" fetch="https://github.com" />
+  <project path="vendor/google/shiba" name="yehonatan2020/lineage_vendor_google_shiba" revision="evo" fetch="https://github.com" />
+</manifest>
