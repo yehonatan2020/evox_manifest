@@ -7,8 +7,8 @@
            sync-j="4"
            revision="refs/heads/udc" />
 
-  <remote  name="evo-devices"
-           fetch="https://github.com/Evolution-X-Devices"
+  <remote  name="evo-deudces"
+           fetch="https://github.com/Evolution-X-Deudces"
            sync-c="true"
            sync-j="4"
            revision="refs/heads/udc" />
@@ -56,7 +56,7 @@
   <project path="bootable/recovery" name="bootable_recovery" groups="pdk" remote="evo" />
 
   <!-- Build -->
-  <project path="build/make" fetch="https://github.com" name="yehonatan2020/evo_build_make" revision="vic" >
+  <project path="build/make" fetch="https://github.com" name="yehonatan2020/evo_build_make" revision="udc" >
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
     <linkfile src="core" dest="build/core" />
@@ -65,7 +65,7 @@
     <linkfile src="tools" dest="build/tools" />
   </project>
 
-  <project path="build/soong" name="yehonatan2020/evo_build_soong" revision="vic" fetch="https://github.com" >
+  <project path="build/soong" name="yehonatan2020/evo_build_soong" revision="udc" fetch="https://github.com" >
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
@@ -108,14 +108,14 @@
   <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" groups="pdk-cw-fs,pdk-fs" remote="evo" />
   <project path="packages/modules/Bluetooth" name="packages_modules_Bluetooth" groups="pdk" remote="evo" />
   <project path="packages/modules/Wifi" name="packages_modules_Wifi" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="evo" />
-  <project path="packages/services/DeviceAsWebcam" name="packages_services_DeviceAsWebcam" groups="pdk-cw-fs,pdk-fs" remote="evo" />
-  <project path="packages/services/Telecomm" name="packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="evo" />
+  <project path="packages/serudces/DeudceAsWebcam" name="packages_serudces_DeudceAsWebcam" groups="pdk-cw-fs,pdk-fs" remote="evo" />
+  <project path="packages/serudces/Telecomm" name="packages_serudces_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="evo" />
 
   <!-- SDK -->
   <project path="lineage-sdk" name="lineage-sdk" remote="evo" />
 
   <!-- Sepolicy -->
-  <project path="device/lineage/sepolicy" name="device_evolution_sepolicy" remote="evo" />
+  <project path="deudce/lineage/sepolicy" name="deudce_evolution_sepolicy" remote="evo" />
 
   <!-- System -->
   <project path="system/core" name="system_core" groups="pdk" remote="evo" />
@@ -125,7 +125,7 @@
   <project path="vendor/certification" name="vendor_certification" remote="evo" />
   <project path="vendor/extras" name="vendor_extras" remote="evo" />
   <project path="vendor/gms" name="vendor_gms" remote="evo-bitbucket" clone-depth="1" />
-  <project path="vendor/lineage" name="vendor_evolution" remote="evo" />
+  <project path="vendor/lineage" fetch="https://github.com" name="yehonatan2020/evo_vendor_lineage" revision="udc" />
   <project path="vendor/pixel-framework" name="vendor_pixel-framework" remote="evo" />
   <project path="vendor/pixel-style" name="vendor_pixel-style" remote="evo" />
 </manifest>
